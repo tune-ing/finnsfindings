@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Study Abroad · Finn Kingsbury</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    body {
+      font-family: 'Garamond', serif;
+      line-height: 1.6;
+      font-size: 18px;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      background: #fff;
+    }
+
+    /* Three-column grid for layout */
+    .layout {
+      display: grid;
+      grid-template-columns: 1fr minmax(500px, 800px) 1fr;
+      gap: 20px;
+      max-width: 1600px;
+      width: 100%;
+    }
+      
+
+    .content {
+      grid-column: 2;
+      text-align: center;
+    }
+
+    ul {
+      text-align: left;
+    }
+
+    /* Side Images Container */
+    /* .side-images {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .photo {
+      position: relative;
+      display: inline-block;
+    }
+
+    .photo img.main {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border: 4px solid white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      transform: rotate(-2deg);
+    } */
+     .side-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;   /* instead of center */
+}
+
+.photo {
+  position: relative;
+  display: block;         /* full block */
+  width: 100%;            /* fill the whole grid column */
+}
+
+.photo img.main {
+  width: 100%;            /* instead of max-width */
+  height: auto;
+  border: 4px solid white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transform: rotate(-2deg);
+}
+
+
+    .photo .tack {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-20deg);
+      width: 30px;
+      pointer-events: none;
+    }
+
+    .photo figcaption {
+      display: none;
+      font-size: 0.85rem;
+      color: #444;
+      text-align: center;
+      margin-top: 6px;
+    }
+
+    .photo:hover figcaption {
+      display: block;
+    }
+
+    /* Mobile responsive: stack columns */
+    @media (max-width: 800px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+      .content {
+        grid-column: 1;
+      }
+      .side-images {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .photo {
+        width: 45%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <!-- Left flanking images -->
+    <div class="side-images">
+      <figure class="photo">
+        <img src="images/DAC_slide.jpg" alt="DAC Slide" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>DAC Slide</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/chair_galore.jpg" alt="Chair Galore" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Chair Galore at DesignDanmark</figcaption>
+      </figure>
+      
+      <figure class="photo">
+        <img src="images/banksy_reflection.jpg" alt="Woman with stars of women names in a halo" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Print of Woman with a halo of stars around her head like the Paramount Logo in the Banksy Museum</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/aalborg_robot.jpg" alt="Aalborg Robot" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Aalborg Robot Street Art where an amusement park used to be</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/street_art_aalborg.jpg" alt="Street Art in Aalborg" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Street Art in Aalborg</figcaption>
+      </figure>
+    </div>
+
+    <!-- Center content -->
+    <div class="content">
+      <h2><a href="index.html">finn</a></h2>
+      <h3><a href="study-abroad.html"> Study Abroad</a> — Week 3 (ish) Reflection</h3>
+
+      <h3>Overview of September 7th - September 13th, 2025: Core Course Week!</h3>
+      <ul>
+        <li>Main theme of the week: I only had my core course (Urban European Experience), so I go to spend a lot of time with them and exploring urban environments.</li>
+        <li>Biggest highlight: Aalborg and learning people's names haha</li>
+        <li>Biggest challenge: Patience with myself and others</li>
+      </ul>
+
+      <h3>More detailed thoughts</h3>
+      <ul>
+        <li>September 8th - It's also K7 week. There are many free museums in Denmark, so I’m starting my museum grind. First the DAC before my core course sails on the Harbour Bus. It was okay. I liked the slide and that I got in for free. The location with the glass building and the view of the harbour is nice, but not worth the normal ticket fee. </li>
+        <li>September 9th - traveled 40 min to Malmo to observe the difference in urban spaces. It is a smaller city both geographically and population wise than Copenhagen and it shows with the shorter buildings and more open space to roam by foot and bike. There is more of a car culture as well as the Swedes are not taxed as much on their vehicle purchases. I was shocked when I learned it was 100% for the Danes! That’s a lot!</li>
+        <li>September 10th - big museum day visiting three museums. See photos. Glad I went when it was free. </li>
+        <li>September 11 - 13 - Core Course Short Study Tour to Aalborg in northern Denmark (Jutland). I quite enjoyed it. It was nice getting to know the people in my class (we did a name game!). Also Stephen joined and he provided a lot of detail and an anchor to Regitze who is a little scattered sometimes. Aalborg was sleepy compared to Copenhagen, but that was a nice change of pace. While we divided into groups, I have realized that this is my favorite group of people overall. I feel like these people actually care about their education in a way that some of my other peers have not convinced me that they do. </li>
+        <li>September 14 - I wake up to what sounds like a party blasting through my window. Nope, it’s the half marathon. So I decided to hit five museums. I was museum-ed out by the end of the day, but I felt quite cultured. </li>
+      </ul>
+
+      <h3>Quick Stats</h3>
+      <ul>
+        <li>Hours on train : 15!</li>
+        <li>Places visited: Aalborg, Malmo, DAC, DesignDanmark, National Musem, Copenhagen Museum, Banksy, SMK, CopenhagenContemporary, Kunsten, Buens Bogcafe, Natural History Musuem, and probably another Musuem I don't remember. It was a lot.</li>
+        <li>Favorite food: Dinner at Kunsten</li>
+        <li>Shout out to the new people I met (who I want to hang out with again): Catherine H, Allie C, Sinclair, and Ava. </li>
+      </ul>
+
+      <!-- <h3>Longform Reflection</h3>
+      <p>&lt;One to two paragraphs of thoughts&gt;</p> -->
+
+      <footer>
+        © <span id="y"></span> Finn Kingsbury
+        <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+      </footer>
+    </div>
+
+    <!-- Right flanking images -->
+    <div class="side-images">
+      <figure class="photo">
+        <img src="images/cph_half.jpg" alt="Half Marathon in Copenhagen outside my window" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Half Marathon in Copenhagen (a little like Marmon!)</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/malmo_spine.jpg" alt="Malmo Spine" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Malmo Spine</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/buens_bog.jpg" alt="Buens Bog Cafe" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Buens BogCafe</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/train_brigde_aalborg.jpg" alt="Train Bridge in Aalborg" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Train Bridge in Aalborg</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/kunsten_dinner.jpg" alt="Dinner at Kunsten" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Dinner at Kunsten</figcaption>
+      </figure>
+    </div>
+  </div>
+</body>
+</html>

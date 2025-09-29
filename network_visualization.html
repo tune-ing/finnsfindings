@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Organization Network · Finn Kingsbury</title>
+  <style>
+    :root {
+      --bg: #fff;
+      --fg: #000;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: Garamond, 'Times New Roman', serif;
+      line-height: 1.6;
+      font-size: 18px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    h1 a {
+      color: var(--fg);
+      text-decoration: none;
+    }
+
+    h1 a:hover {
+      text-decoration: underline;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .description {
+      text-align: left;
+      max-width: 800px;
+      margin: 0 auto 2rem auto;
+      font-size: 1rem;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .description ul {
+      margin: 0.5rem 0;
+      padding-left: 1.5rem;
+    }
+
+    .nav-links {
+      margin-top: 2rem;
+    }
+
+    .nav-links a {
+      color: var(--fg);
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    iframe {
+      width: 100%;
+      height: 700px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1><a href="index.html">Finn Kingsbury</a></h1>
+    <h2>Campus Organization Network Analysis</h2>
+    
+    <div class="description">
+      <p>This interactive visualization shows the connections between different campus organizations at Wellesley based on shared membership. The organizations analyzed include:</p>
+      <ul>
+        <li><strong>WZLY</strong> - campus radio station</li>
+        <li><strong>Whiptails</strong> - ultimate frisbee team</li>
+        <li><strong>HKSA</strong> - Hong Kong Student Association</li>
+        <li><strong>Glass Garage</strong> - maker space</li>
+        <li><strong>Data Science 27</strong> - academic group</li>
+      </ul>
+      <p><strong>How to interact:</strong> Hover over nodes to see details, pan by clicking and dragging, zoom with your mouse wheel or trackpad.</p>
+    </div>
+
+    <!-- Embed the interactive Plotly graph -->
+    <iframe src="organization_network.html" title="Campus Organization Network Visualization"></iframe>
+
+    <div class="nav-links">
+      <a href="about.html">About</a> ·
+      <a href="study-abroad.html">Study Abroad</a> ·
+      <a href="projects.html">Projects</a> ·
+      <a href="misc.html">Misc</a>
+    </div>
+
+    <footer>
+      © <span id="y"></span> Finn Kingsbury
+      <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+    </footer>
+  </main>
+</body>
+</html>

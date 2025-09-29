@@ -1,0 +1,98 @@
+:root {
+  --bg: #fff;
+  --fg: #000;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: Garamond, 'Times New Roman', serif;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+main {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+ul {
+  list-style-type: disc;
+  margin: 1rem auto;
+  padding-left: 1.2rem;
+  text-align: left;
+  max-width: 475px;
+}
+
+
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: black;
+  text-decoration: underline;
+}
+
+
+
+/* Inline nav links on landing */
+.nav-links {
+  margin-top: 2rem;
+}
+
+.nav-links a {
+  margin: 0 8px;
+}
+
+/* Carousel */
+.carousel-title {
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+.carousel img,
+.gallery img {
+  display: block;
+  width: 100%;    /* fills the column */
+  height: auto;   /* keeps proportions */
+  margin: 0 auto;
+}
+
+/* .carousel img {
+  width: 100%;
+  display: none;
+} */
+
+/* .carousel img.active {
+  display: block;
+} */
+
+
+
+footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #555;
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Study Abroad · Finn Kingsbury</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    body {
+      font-family: 'Garamond', serif;
+      line-height: 1.6;
+      font-size: 18px;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      background: #fff;
+    }
+
+    /* Three-column grid for layout */
+    .layout {
+      display: grid;
+      grid-template-columns: 1fr minmax(500px, 800px) 1fr;
+      gap: 20px;
+      max-width: 1600px;
+      width: 100%;
+    }
+      
+
+    .content {
+      grid-column: 2;
+      text-align: center;
+    }
+
+    ul {
+      text-align: left;
+    }
+
+    /* Side Images Container */
+    /* .side-images {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .photo {
+      position: relative;
+      display: inline-block;
+    }
+
+    .photo img.main {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border: 4px solid white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      transform: rotate(-2deg);
+    } */
+     .side-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;   /* instead of center */
+}
+
+.photo {
+  position: relative;
+  display: block;         /* full block */
+  width: 100%;            /* fill the whole grid column */
+}
+
+.photo img.main {
+  width: 100%;            /* instead of max-width */
+  height: auto;
+  border: 4px solid white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transform: rotate(-2deg);
+}
+
+
+    .photo .tack {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-20deg);
+      width: 30px;
+      pointer-events: none;
+    }
+
+    .photo figcaption {
+      display: none;
+      font-size: 0.85rem;
+      color: #444;
+      text-align: center;
+      margin-top: 6px;
+    }
+
+    .photo:hover figcaption {
+      display: block;
+    }
+
+    /* Mobile responsive: stack columns */
+    @media (max-width: 800px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+      .content {
+        grid-column: 1;
+      }
+      .side-images {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .photo {
+        width: 45%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <!-- Left flanking images -->
+    <div class="side-images">
+      <figure class="photo">
+        <img src="images/carmen_opera_festival.jpg" alt="Carmen Opera" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Opera night 1</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/jesus_queen_opera.jpg" alt="Carmen Opera" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Opera night 2</figcaption>
+      </figure>
+      <!-- <figure class="photo">
+        <img src="images/jesus_queen_opera_program.jpg" alt="Carmen Opera" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Opera night 2 prayer</figcaption>
+      </figure> -->
+      <figure class="photo">
+        <img src="images/first_hucks.jpg" alt="Street" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>First Hucks practice (mixed) with DIS people!</figcaption>
+      </figure>
+    </div>
+
+    <!-- Center content -->
+    <div class="content">
+      <h2><a href="index.html">finn</a></h2>
+      <h3><a href="study-abroad.html"> Study Abroad</a> — Week 1 (ish) Reflection</h3>
+
+      <h3>Overview of August 17 - August 27, 2025</h3>
+      <ul>
+        <li>Main theme of the week: keep trying new things</li>
+        <li>Biggest highlight: meeting new friends through others and exploring the city</li>
+        <li>Biggest challenge: My assumptions about other americans</li>
+      </ul>
+
+      <h3>More detailed thoughts</h3>
+      <ul>
+        <li>Copenhagen Opera Festival: Attended two performances. First was an abbreviated version of Carmen by Bizet. That had an amazing conductor. The second was a story about if Jesus was a woman and made me really think about the world which was cool. Also at this cool young hip venue where I could see myself in ten years in the audience members.</li>
+        <li>A LOT of WALKING — Toured Norrebro, walked around the lakes, saw a double rainbow on my path to pick up a too good to go from Lagkahuset.</li>
+        <li>Mixed frisbee practice with Hucks. I love frisbee and the community. Everyone's so willing to learn and teach in a mostly kind way. But I do enjoy mixed more as I feel that there are more chances taken and less precision which slows the game.</li>
+        <li>Nightlife: went to Proud Mary's on a Tuesday for "American Night". Not my scene, take your frat party and add more BO, a professional bar, and more tables to dance on, but I'm glad I saw what it was.</li>
+        <li>Explored the canals. Organized new friends to take out a GoBoat and cruised on the canals while sipping fruit wine, eating cheese, and making dumb jokes. It was a blast!</li>
+        <li>Class. I'm enjoying all of my classes so far, and currently I like my Anthropology of Food class the best because we got to eat! and the professor is quite "bitchy and opinionated" (his words, not mine).</li>
+      </ul>
+
+      <h3>Quick Stats</h3>
+      <ul>
+        <li>Miles walked: 72!</li>
+        <li>Places visited: Norrebro, The Lakes, Vesterbro, Inner City, Reffen. </li>
+        <li>Favorite food: Onigiri from Come in the meatpacking district</li>
+        <li>Shout out to the new people I met (who I want to hang out with again): Zoe, Sasha, Bea, Ever, Kiara, Mickey, Ariella, Paige, Miles, Molly, Anie, Julia, Clara, Aashna, & Fiona. </li>
+      </ul>
+
+      <!-- <h3>Longform Reflection</h3>
+      <p>&lt;One to two paragraphs of thoughts&gt;</p> -->
+
+      <footer>
+        © <span id="y"></span> Finn Kingsbury
+        <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+      </footer>
+    </div>
+
+    <!-- Right flanking images -->
+    <div class="side-images">
+      <figure class="photo">
+        <img src="images/double_rainbow_cph.jpg" alt="Double Rainbow" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Double Rainbow in Copenhagen by Norreport Station</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/goats_on_tour_of_norrebro.jpg" alt="Goats on Tour of Norrebro" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Goats on Tour of Norrebro</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/walk_by_the_lakes_cph.jpg" alt="Street" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Copenhagen street walk by The Lakes</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/go_boat_friends.jpg" alt="GoBoat with friends" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>GoBoat with Friends in Copenhagen</figcaption>
+      </figure>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Study Abroad · Finn Kingsbury</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    body {
+      font-family: 'Garamond', serif;
+      line-height: 1.6;
+      font-size: 18px;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      background: #fff;
+    }
+
+    /* Three-column grid for layout */
+    .layout {
+      display: grid;
+      grid-template-columns: 1fr minmax(500px, 725px) 1fr;
+      gap: 20px;
+      max-width: 1600px;
+      width: 100%;
+    }
+      
+
+    .content {
+      grid-column: 2;
+      text-align: center;
+    }
+
+    ul {
+      text-align: left;
+    }
+
+    /* Side Images Container */
+    /* .side-images {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .photo {
+      position: relative;
+      display: inline-block;
+    }
+
+    .photo img.main {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border: 4px solid white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      transform: rotate(-2deg);
+    } */
+     .side-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;   /* instead of center */
+}
+
+.photo {
+  position: relative;
+  display: block;         /* full block */
+  width: 100%;            /* fill the whole grid column */
+}
+
+.photo img.main {
+  width: 100%;            /* instead of max-width */
+  height: auto;
+  border: 4px solid white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transform: rotate(-2deg);
+}
+
+
+    .photo .tack {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-20deg);
+      width: 30px;
+      pointer-events: none;
+    }
+
+    .photo figcaption {
+      display: none;
+      font-size: 0.85rem;
+      color: #444;
+      text-align: center;
+      margin-top: 6px;
+    }
+
+    .photo:hover figcaption {
+      display: block;
+    }
+
+    /* Mobile responsive: stack columns */
+    @media (max-width: 800px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+      .content {
+        grid-column: 1;
+      }
+      .side-images {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .photo {
+        width: 45%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <!-- Left flanking images -->
+    <div class="side-images">
+      <figure class="photo">
+        <img src="images/hausdemeeres.jpg" alt="Haus de Meeres" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Reccomended by Moon: Haus de Meeres an aquarium with a turtle</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/naschmarkt.jpg" alt="Naschmarkt set up" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Walking through naschmarkt</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/parliament_seats.jpg" alt="Vienna Parliament Hall" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Vienna Parliament Hal</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/vienna_grand.jpg" alt="Some building in Vienna" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>They were all very grand and spectacular. There was a lot of gold and decorations.</figcaption>
+      </figure>
+       <figure class="photo">
+        <img src="images/comsoc_poster.jpg" alt="Computation Social Choice Poster" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Selfie when I arrived to the conference</figcaption>
+      </figure>
+    </div>
+
+    <!-- Center content -->
+    <div class="content">
+      <h2><a href="index.html">finn</a></h2>
+      <h3><a href="study-abroad.html"> Study Abroad</a> — Week 4 (ish) Reflection</h3>
+
+      <h3>Overview of September 14th - September 21st, 2025: Conference in Vienna & other adventures!</h3>
+      <ul>
+        <li>Main theme of the week: Social choices are rarely deterministic</li>
+        <li>Biggest highlight: Visiting vienna and learning about comsoc! (computation social choice)</li>
+        <li>Biggest challenge: Unfamiliarity with Vienna and foot pain</li>
+      </ul>
+
+      <h3>More detailed thoughts</h3>
+      <ul>
+    <li>September 17th - I fly to Vienna, Austria for a Computation Social Choice conference that Moon Duchin (my PI from the summer) is a keynote speaker for. I am also just interested in this area of math/public policy, so I thought that this conference would be a worthwhile opportunity and I did quite enjoy my time. </li>
+    <li>September 19th - I get dinner with my high school friend Micah who is studying abroad in Vienna and play board games with them in a cafe until midnight</li>
+    <li>September 20th - Museum day, but a Vienna version. I take up my PI’s advice to visit a German munition tower turned into an aquarium: Haus de Meeres. That was really cool and I was glad to visit an aquarium. I also enjoyed the Haus de musik. I did a lot, but I quite enjoyed my time trying to hit many touristy spots. Because I fully embraced my solo traveling tourist attitude, I had a lot of fun because I had low expectations. This is something I want to carry with me here in Copenhagen. </li>
+    <li>September 21st - Happy 21st to me :)) Also, I played in a frisbee tournament with Hucks! My play got significantly better throughout the day as I remembered to use my dumps instead of trying to be a hero. Also, we went to Ramen Hokkaido after which was so nice to celebrate the tournament and because my fridge was empty. I got a smattering of birthday wishes throughout the day which was also lovely.</li>
+    
+    </ul>
+
+      <h3>Quick Stats</h3>
+      <ul>
+        <li>Talks listened to : 25!</li>
+        <li>Places visited: Vienna, Gugg, another queer bar, and a few more museums</li>
+        <li>Favorite food: Dinner at Stokl im</li>
+        <li>Shout out to the very nice shop merchants whom I bartered with. </li>
+      </ul>
+
+      <!-- <h3>Longform Reflection</h3>
+      <p>&lt;One to two paragraphs of thoughts&gt;</p> -->
+
+      <footer>
+        © <span id="y"></span> Finn Kingsbury
+        <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+      </footer>
+    </div>
+
+    <!-- Right flanking images -->
+    <div class="side-images">
+      <figure class="photo">
+        <img src="images/poster_condorcet.jpg" alt="Condorcet Poster with custom shirt" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Poster on why STV is more resistant to strategy voting. </figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/vienna_micah.jpg" alt="Vienna with Micah" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Vienna with Micah playing a game in a thrift store</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/stockim_dinner.jpg" alt="Stockl Im Dinner" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Stockl Im Dinner</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/vienna_mozat_lego.jpg" alt="Mozart Lego Statue in Vienna" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Mozart Lego Statue in Vienna</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/stpeters.jpg" alt="St. Peters Church" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>I had to get a photo at the famous St. Peters Church, although I do enjoy the quieter parts of the city.</figcaption>
+      </figure>
+    </div>
+  </div>
+</body>
+</html>

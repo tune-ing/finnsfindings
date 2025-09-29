@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Study Abroad · Finn Kingsbury</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    body {
+      font-family: 'Garamond', serif;
+      line-height: 1.6;
+      font-size: 18px;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      background: #fff;
+    }
+
+    /* Three-column grid for layout */
+    .layout {
+      display: grid;
+      grid-template-columns: 1fr minmax(500px, 800px) 1fr;
+      gap: 20px;
+      max-width: 1600px;
+      width: 100%;
+    }
+      
+
+    .content {
+      grid-column: 2;
+      text-align: center;
+    }
+
+    ul {
+      text-align: left;
+    }
+
+    /* Side Images Container */
+    /* .side-images {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .photo {
+      position: relative;
+      display: inline-block;
+    }
+
+    .photo img.main {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border: 4px solid white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      transform: rotate(-2deg);
+    } */
+     .side-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;   /* instead of center */
+}
+
+.photo {
+  position: relative;
+  display: block;         /* full block */
+  width: 100%;            /* fill the whole grid column */
+}
+
+.photo img.main {
+  width: 100%;            /* instead of max-width */
+  height: auto;
+  border: 4px solid white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transform: rotate(-2deg);
+}
+
+
+    .photo .tack {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-20deg);
+      width: 30px;
+      pointer-events: none;
+    }
+
+    .photo figcaption {
+      display: none;
+      font-size: 0.85rem;
+      color: #444;
+      text-align: center;
+      margin-top: 6px;
+    }
+
+    .photo:hover figcaption {
+      display: block;
+    }
+
+    /* Mobile responsive: stack columns */
+    @media (max-width: 800px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+      .content {
+        grid-column: 1;
+      }
+      .side-images {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .photo {
+        width: 45%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <!-- Left flanking images -->
+    <div class="side-images">
+      <figure class="photo">
+        <img src="images/christainia_troll.jpg" alt="Christainia Troll" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>0.5 Selfie in front of Christainia Troll</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/frisbeach.jpg" alt="Frisbee on the beach" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Beach Frisbee with DIS peers</figcaption>
+      </figure>
+      
+      <figure class="photo">
+        <img src="images/lousiana_flowers.jpg" alt="Louisiana Flowers" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Painting of Samling Flowers in the Lousiana Museum</figcaption>
+      </figure>
+    </div>
+
+    <!-- Center content -->
+    <div class="content">
+      <h2><a href="index.html">finn</a></h2>
+      <h3><a href="study-abroad.html"> Study Abroad</a> — Week 2 (ish) Reflection</h3>
+
+      <h3>Overview of August 30 - September 6, 2025</h3>
+      <ul>
+        <li>Main theme of the week: keep trying new things and just explore the sites I want to see</li>
+        <li>Biggest highlight: exploring the city on my own!</li>
+        <li>Biggest challenge: My assumptions about other americans</li>
+      </ul>
+
+      <h3>More detailed thoughts</h3>
+      <ul>
+      <li>August 30th - I biked two hours north to the Louisiana Museum! It was incredible. Perfect weather: sunny and a slight breeze. I learned that Denmark is very flat, so the ride, while long, was easy. :))  </li>
+       <li>September 3rd - Biked to Reffen and swam at La Bachina. It did live up to the hype and I am very glad that I went while it was still warm out.</li>
+       <li>September 4th - I got my rice cooker. So happy, I’ve been using it nearly daily since.</li>
+       <li>September 5th - met some very cool people at Bastard Cafe and September 6th we explored Christainia together.</li>
+</ul>
+
+      <h3>Quick Stats</h3>
+      <ul>
+        <li>Miles biked: 70!</li>
+        <li>Places visited: Humlebæk, Torvehallen, Bellevue Strand, Christainia, Bastard Board Game Cafe, Absalon.</li>
+        <li>Favorite food: Cake from Sweet Valentine from TooGoodToGo</li>
+        <li>Shout out to the new people I met (who I want to hang out with again): Sadie, Anna, Sydney, and a handful of frisbee kids whose names I don't remember whoops. </li>
+      </ul>
+
+      <!-- <h3>Longform Reflection</h3>
+      <p>&lt;One to two paragraphs of thoughts&gt;</p> -->
+
+      <footer>
+        © <span id="y"></span> Finn Kingsbury
+        <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+      </footer>
+    </div>
+
+    <!-- Right flanking images -->
+    <div class="side-images">
+      <figure class="photo">
+        <img src="images/swim_at_la_bachina.jpg" alt="Swimming at La Bachina" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Swimming at La Bachina</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/finn_lousiana.jpg" alt="Finn at Louisiana Museum" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Finn at Louisiana Museum</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/blox.jpg" alt="Blox building" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Enjoying the clear skies</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/toogoodtogo_cake.jpg" alt="Too Good To Go Cake" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>TooGoodToGo Cake from Sweet Valentine</figcaption>
+      </figure>
+    </div>
+  </div>
+</body>
+</html>
