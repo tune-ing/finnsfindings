@@ -1,0 +1,2 @@
+# finnsfindings
+personal blog
