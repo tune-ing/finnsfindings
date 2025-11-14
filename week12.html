@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Study Abroad · Finn Kingsbury</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    body {
+      font-family: 'Garamond', serif;
+      line-height: 1.6;
+      font-size: 18px;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      background: #fff;
+    }
+
+    /* Three-column grid for layout */
+    .layout {
+      display: grid;
+      grid-template-columns: 1fr minmax(500px, 725px) 1fr;
+      gap: 20px;
+      max-width: 1600px;
+      width: 100%;
+    }
+      
+
+    .content {
+      grid-column: 2;
+      text-align: center;
+    }
+
+    ul {
+      text-align: left;
+    }
+
+    /* Side Images Container */
+    /* .side-images {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .photo {
+      position: relative;
+      display: inline-block;
+    }
+
+    .photo img.main {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border: 4px solid white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      transform: rotate(-2deg);
+    } */
+     .side-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;   /* instead of center */
+}
+
+.photo {
+  position: relative;
+  display: block;         /* full block */
+  width: 100%;            /* fill the whole grid column */
+}
+
+.photo img.main {
+  width: 100%;            /* instead of max-width */
+  height: auto;
+  border: 4px solid white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transform: rotate(-2deg);
+}
+
+
+    .photo .tack {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-20deg);
+      width: 30px;
+      pointer-events: none;
+    }
+
+    .photo figcaption {
+      display: none;
+      font-size: 0.85rem;
+      color: #444;
+      text-align: center;
+      margin-top: 6px;
+    }
+
+    .photo:hover figcaption {
+      display: block;
+    }
+
+    /* Mobile responsive: stack columns */
+    @media (max-width: 800px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+      .content {
+        grid-column: 1;
+      }
+      .side-images {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .photo {
+        width: 45%;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <!-- Left flanking images -->
+    <div class="side-images">
+      <figure class="photo">
+        <img src="images/rijks_ship.jpg" alt="Rijksmuseum Ship" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Cool ship model in the Rijksmuseum</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/stroopwaffle.jpg" alt="Stroopwafel" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Delicious stroopwafel from a local cafe!</figcaption>
+      </figure>
+      <!-- <figure class="photo">
+        <img src="images/mrnata.jpg" alt="Portuguese Egg tart" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Portuguese Egg Tart, so tasty!</figcaption>
+      </figure> -->
+      <figure class="photo">
+        <img src="images/oxford_hos.jpg" alt="Oxford House of Science" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>History of Science museum.</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/guiness.jpg" alt="Pint of Guinness" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Pint of Guiness</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/dinner_wMickie.jpg" alt="Dinner in Bologna with Mickie" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Dinner with Mickie</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/french_braid.jpg" alt="French braid" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Self french braid. Telltale sign to get a haircut lol.</figcaption>
+      </figure>
+    </div>
+
+    <!-- Center content -->
+    <div class="content">
+    <h2><a href="study-abroad.html">Study Abroad Blog</a></h2>
+    <h3>November 14th, 2025</h3>
+
+<p>Below are my adventures during my break last week, and what I have done in the past week since returning to Copenhagen.</p>
+
+<h3>November 2, 2025 - November 4th: Amsterdam.</h3>
+<ul>
+  <li>Visited a high school friend</li>
+  <li>I walked around the Rijksmuseum and the STRAAT street art museum.</li>
+  <li>Many reflections on perception and personal growth.</li>
+  <li>Good vendor shopping and very tasty food.</li>
+  <li>I discovered I LOVE Middle eastern food.</li>
+</ul>
+
+<h3>November 4, 2025 - November 7, 2025: Oxford</h3>
+<ul>
+  <li>Visited a college friend and slept on her floor for three nights. Not bad!</li>
+  <li>Met her friends and made smores with them.</li>
+  <li>Attended her choir service and an orchestra concert.</li>
+  <li>Visited the “Harry Potter” stairs and got afternoon tea.</li>
+  <li>Played frisbee with the Oxford team. Their coach had a great impression of a gawking sideline (it sounded A LOT like a seagull).</li>
+  <li>Drank Guinness in an English pub!</li>
+</ul>
+
+<h3>November 7, 2025 - November 9, 2025: Bologna</h3>
+<ul>
+  <li>Frisbee tournament three! With a women’s team in Bologna.</li>
+  <li>First night slept in a giant sports tent (very cold and didn’t sleep consistently)</li>
+  <li>The team clicked together on day 2. Touched the disc once :0 during a real game. More thoughts see frisbee reflection after three back to back tournament weekends.</li>
+  <li>Explored bologna Day 1 with Mickie! A lot of bus adventures and walking.</li>
+</ul>
+
+<p>— BACK in CPH —</p>
+
+<h3>Highlights from this week:</h3>
+<ul>
+  <li>FOOD: Cooked salmon 83 dkk lasted two meals with a salad! Super tasty and filling and good to get some green after Italy.</li>
+  <li>Career Night for Urban studies. I really am not a fan of how the Danes seem to frame the obvious as a new discovery. I KNOW networking is important. But it was interesting to listen to DIS alums and their stories.</li>
+  <li>Impromptu jazz concert in Christainia by an American trumpet player: David Dunbar. Quite enjoyable. Went with a friend? From class.</li>
+  <li>&gt;&gt; My definition of friendship is changing. Especially with limited time, I know I have to find a balance between meeting new people and developing my current relationships.</li>
+  <li>French braided my hair – I really should get a haircut soon. I want to grow my hair out, but it looks really not so good. I was impressed that I was able to braid it since I haven’t french braided any hair in two years since I cut my own.</li>
+  <li>Tossed with Kiara and Mickie. So fun and easy emotionally. We also did sprints. Always a good reminder that sprints don’t take a long time, so I should start to do them again.</li>
+  <li>Made a very tasty dinner last night. I have discovered the portion of food for two meals. Or rather a dinner and a good enough portion for leftovers.</li>
+  <li>Cleaned my room and took out my trash and put up decorations.</li>
+</ul>
+
+<p>It’s really hitting me now how much of the city I haven’t explored yet. Blinded by the lack of sun, I wanted to just lie in my bed until the sun came up and then face the world. But when the sun rises after 8 and passes just before 4, that’s not a lot of time to see the city. It’s time to really explore the nightlife here, even if it starts at 11 seven hours after the sun sets. AHHH.</p>
+
+<p>There’s also only a month or so left in my program, so three ish weeks of class left. This time has never felt long, but it is certainly moving faster now. People seem more willing to spend time with others. Even Wellesley people. There seems to be a fervor to explore with the little time we have left.</p>
+
+
+      <footer>
+        © <span id="y"></span> Finn Kingsbury
+        <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+      </footer>
+    </div>
+
+    <!-- Right flanking images -->
+    <div class="side-images">
+      <figure class="photo">
+        <img src="images/rijks_library.jpg" alt="Rijksmuseum library" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>I love a bookshelf ladder</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/selfiestraat.jpg" alt="Selfie Straat" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Selfie @ Straat</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/kimi_hightea.jpg" alt="High Tea at Kimi" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>High Tea with Kimi</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/kimi_hp.jpg" alt="Selfie with Kimi in Harry Potter dining hall" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Selfie with Kimi in Harry Potter dining hall.</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/nosleepbologna.jpg" alt="No Sleep in Bologna" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>No Sleep in Bologna; selfie with Kiara and Mickie. </figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/dinner_burrate.jpg" alt="Dinner Burrata Pasta" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Chef-ed this up yesterday, quite happy and made good leftovers!</figcaption>
+      </figure>
+       <figure class="photo">
+        <img src="images/dinner_salmonda.jpg" alt="Dinner with Salmon and Salad" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Salmon Salad dinner</figcaption>
+      </figure>
+    </div>
+  </div>
+</body>
+</html>

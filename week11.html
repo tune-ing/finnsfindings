@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Study Abroad · Finn Kingsbury</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    body {
+      font-family: 'Garamond', serif;
+      line-height: 1.6;
+      font-size: 18px;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      background: #fff;
+    }
+
+    /* Three-column grid for layout */
+    .layout {
+      display: grid;
+      grid-template-columns: 1fr minmax(500px, 725px) 1fr;
+      gap: 20px;
+      max-width: 1600px;
+      width: 100%;
+    }
+      
+
+    .content {
+      grid-column: 2;
+      text-align: center;
+    }
+
+    ul {
+      text-align: left;
+    }
+
+    /* Side Images Container */
+    /* .side-images {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .photo {
+      position: relative;
+      display: inline-block;
+    }
+
+    .photo img.main {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border: 4px solid white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      transform: rotate(-2deg);
+    } */
+     .side-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;   /* instead of center */
+}
+
+.photo {
+  position: relative;
+  display: block;         /* full block */
+  width: 100%;            /* fill the whole grid column */
+}
+
+.photo img.main {
+  width: 100%;            /* instead of max-width */
+  height: auto;
+  border: 4px solid white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transform: rotate(-2deg);
+}
+
+
+    .photo .tack {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-20deg);
+      width: 30px;
+      pointer-events: none;
+    }
+
+    .photo figcaption {
+      display: none;
+      font-size: 0.85rem;
+      color: #444;
+      text-align: center;
+      margin-top: 6px;
+    }
+
+    .photo:hover figcaption {
+      display: block;
+    }
+
+    /* Mobile responsive: stack columns */
+    @media (max-width: 800px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+      .content {
+        grid-column: 1;
+      }
+      .side-images {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .photo {
+        width: 45%;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <!-- Left flanking images -->
+    <div class="side-images">
+      <figure class="photo">
+        <img src="images/albert_cuyp_market.jpg" alt="Albert Cuyp Market" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Stumbled upon the opening and swang back around after Rijksmuseum: Albert Cuyp Market, a vibrant street market in Amsterdam</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/finn_with_jackie.jpg" alt="Me & Jackie" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Me and Jackie in a cafe hiding from the rain!</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/lebanese_saj.jpg" alt="Lebanese Sajeria" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Lebanese Sajeria, both dinners were here (at two different locations).</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/straat1.jpg" alt="Street Art in Amsterdam" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Love this artist! Also saw his work in Aalborg!</figcaption>
+      </figure>
+       <figure class="photo">
+        <img src="images/straat2_withface.jpg" alt="Street Art with Finn's face" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Selfie when infront of art</figcaption>
+      </figure>
+    </div>
+
+    <!-- Center content -->
+    <div class="content">
+    <h2><a href="study-abroad.html">Study Abroad Blog</a></h2>
+    <h3>November 4th, 2025</h3>
+
+<p>I’m currently sitting in the Amsterdam Airport Departure 3 hall waiting for my flight details to come out. My parents are the type to get to the airport very early, and I have followed this pattern. But since being in Europe where the security of the general flow of people is not as mad as the U.S., three hours for international flights is very excessive, so for my 10:15 flight this morning, I aimed to get to the airport at 8:00. I did and I got through security and passport control by 8:15.</p>
+
+<p>I’m glad to have time to write, but the airport times being so streamlined throws me off. However, it is certainly better than the U.S. where security lines are long and passport control is even longer. Within the EU, it is even faster, but today I’m headed to London from Amsterdam, so I wanted to make sure that I made it through with ample time. But now I still have more than an hour before I learn the gate number HX is all I currently know.</p>
+
+<p>Reflections on Amsterdam</p>
+
+<p>I caught up with a friend from high school who studies in Amsterdam permanently at VU to get her bachelors in biomedical engineering and a minor in mathematical and computational science techniques. It was nice to catch up and learn about Dutch culture through her life experiences here and walk around the city. My hostel was in De Pijp, just on the outskirts of the city center. We walked for nearly four hours even though it was cloudy, windy, and rainy pretty hard. It was not the pretty picture Amsterdam that I remembered from the last time I visited, but I enjoyed it nonetheless.</p>
+
+<p>Since biking in Copenhagen, I’ve become a lot more accustomed to bikes taking the right away, but also being an assertive confident walker. The traffic lights don’t turn yellow (just red and green), and my friend attributes it to trusting vehicles and people to be efficient in their decision making. It was a little scary the first couple of intersections, as I hadn’t yet figured out the cadence or whether I could safely jaywalk. The other walking surprise was the number of uneven curbs that my ankle took a liking too, however, my ankle didn’t roll. Every week since the summer, I do ankle mobility exercises and now I’m very happy I do. I would recommend getting resistance bands for this!!</p>
+
+<p>My friend knew she wanted to study biomedicines going into college and has a lot of tangible goals for her life. She has been very clear about her goals since I’ve known her, and as someone who lives in a lot of life uncertainty it’s intimidating to hear her goals as they are very fleshed out. (I want to be clear that I do not mean instability, but rather the above basic needs choices are not clear.) We talked about if she wants to stay in the Netherlands, if she ever will live in the U.S. again, financial projections, wanting kids, her hobbies, her familial goals (given her experience what she wants to have and avoid), and her research. When the question was flipped back at me, I didn’t have many tangible answers with clear examples. For me, I feel comfortable with having a general direction and making progress towards that goal. Additionally, I think I would be stressed out if my plan for the future was very thorough for the worry of missing the mark. I’m trying to live in the present, and while that doesn’t exclude planning for the future, it does mean that that is not where my focus is.</p>
+
+<p>One thing that shook me was her motivation for wanting kids. When the question comes up amongst my other friends it’s typically “I’ve always wanted to be a mom,” or “I love working with kids” or something that makes it apparent that there is an instinct for them. I’ve never had that desire. But when I asked my friend why, she compared the urge similar to wanting to be with someone. Yes, in a way, I can understand that metaphor, but it also feels quite clinical in a way that I am not accustomed to.</p>
+
+<p>The conversation showed how much we had grown individually. In high school we were good friends, but we didn’t really text afterwards. She moved to The Netherlands to pursue her studies, and the first year of college I wasn’t good about keeping up with anyone from high school. I heard about her adventures through my other friends who I still text on rotation, and this catch up confirmed her consistency for her life goals and how much we have grown because of our circumstances.</p>
+
+<p>Going to a college in the United States, and especially at a liberal arts school, is a very sheltered experience: provided room and board, small class sizes, easy access to community through student organizations, advisors, academic freedom to take off-major courses, a handful of traditions, and a very strong alumni network. I didn’t realize how much I took all of that for granted until I started talking to people who don’t have the same circumstances. While our education on paper may look very similar, the community supporting our journeys is not.</p>
+
+<p>In attending Wellesley, I became accustomed to a queer left leaning space that is mostly willing to listen to nuance and wants to learn from others. That’s not a given at some of the state schools, and it becomes hard to assume the best in others when they don’t give you basic respect or flush the toilet. I was surprised when I got to college and people weren’t house trained, but it might be excusable because they’re 17. Here in my study abroad program, I’ve had people be mad that I’m removing lint from the laundry. Dude, you’re 20/21, I’m taking the lint out and it’s not that gross get over yourself.</p>
+
+<p>My mom keeps saying that I won’t know how much I am growing, and I think she is right. But I am starting to see my thoughts change as I keep saying yes to new experiences.</p>
+
+
+      <footer>
+        © <span id="y"></span> Finn Kingsbury
+        <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+      </footer>
+    </div>
+
+    <!-- Right flanking images -->
+    <div class="side-images">
+      <figure class="photo">
+        <img src="images/rijks.jpg" alt="Rijksmuseum" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Rijksmuseum, a Dutch national museum dedicated to arts and history in Amsterdam. Got in for free bc it pays off to get carded where the drinking age in 16. lol.</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/chess_at_rijks.jpg" alt="Chess at Rijksmuseum" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Chess Board at Rijksmuseum made in reflection of WWII</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/straat3.jpg" alt="Street Art" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Mirror reflection of street art. Mirror is also art.</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/hostel_amsterdam.jpg" alt="Hostel in Amsterdam" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Hostel in Amsterdam</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/winkle_43.jpg" alt="Apple Pie" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>TikTok famous apple pie.  I thought that it was okay, but I didn't have the stomach space for it.</figcaption>
+      </figure>
+    </div>
+  </div>
+</body>
+</html>
