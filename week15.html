@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Study Abroad · Finn Kingsbury</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    body {
+      font-family: 'Garamond', serif;
+      line-height: 1.6;
+      font-size: 18px;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      background: #fff;
+    }
+
+    /* Three-column grid for layout */
+    .layout {
+      display: grid;
+      grid-template-columns: 1fr minmax(500px, 725px) 1fr;
+      gap: 20px;
+      max-width: 1600px;
+      width: 100%;
+    }
+      
+
+    .content {
+      grid-column: 2;
+      text-align: center;
+    }
+
+    ul {
+      text-align: left;
+    }
+
+    /* Side Images Container */
+    /* .side-images {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .photo {
+      position: relative;
+      display: inline-block;
+    }
+
+    .photo img.main {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border: 4px solid white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      transform: rotate(-2deg);
+    } */
+     .side-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;   /* instead of center */
+}
+
+.photo {
+  position: relative;
+  display: block;         /* full block */
+  width: 100%;            /* fill the whole grid column */
+}
+
+.photo img.main {
+  width: 100%;            /* instead of max-width */
+  height: auto;
+  border: 4px solid white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transform: rotate(-2deg);
+}
+
+
+    .photo .tack {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-20deg);
+      width: 30px;
+      pointer-events: none;
+    }
+
+    .photo figcaption {
+      display: none;
+      font-size: 0.85rem;
+      color: #444;
+      text-align: center;
+      margin-top: 6px;
+    }
+
+    .photo:hover figcaption {
+      display: block;
+    }
+
+    /* Mobile responsive: stack columns */
+    @media (max-width: 800px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+      .content {
+        grid-column: 1;
+      }
+      .side-images {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .photo {
+        width: 45%;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+ 
+  <div class="layout">
+    <!-- Left flanking images -->
+    <div class="side-images">
+      <figure class="photo">
+        <img src="images/alma tgtg.jpeg" alt="Alma TooGoodToGo" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Dessert TooGoodToGo from Alma store</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/doner_box.jpeg" alt="Doner Box" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Delicious doner box from a local truck in Frederiksberg!</figcaption>
+      </figure>
+      <!-- <figure class="photo">
+        <img src="images/pakk win.jpeg" alt="Pakkeleg win" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Pakkeleg win, so fun! immediately lost one of the ear plugs haha</figcaption>
+      </figure>-->
+      <figure class="photo">
+        <img src="images/norrebro farm.jpeg" alt="Norrebro Farm" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Showed Ruby and Morgan the Nørrebro farm and garden with goats and rabbits.</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/mickieperisadie.jpeg" alt="Mickie and Peri and Sadie" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Mickie, Peri, and Sadie smile :)</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/christiansborg bois.jpeg" alt="Christiansborg spire" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>View on the walk to do arts and crafts with the boys. So so fun and stupid.</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/apotek57.jpeg" alt="Another bakery: Apotek57" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Peaceful BMO very tasty and reflective too, somehow.</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/daily happiness.jpeg" alt="Daily happiness post its" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Wall decor with daily happiness post-its.</figcaption>
+      </figure>
+     <!-- <figure class="photo">
+        <img src="images/frisbparty.jpeg" alt="Good time with the pickup people at Nimbus" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Hanging out with the frisbee people at Nimbus on a Tuesday.</figcaption>
+      </figure>-->
+      <figure class="photo">
+        <img src="images/matcha mori.jpeg" alt="Another lunch spot: Matcha Mori" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Got lunch with Chelsea, so fun to catch up!</figcaption>
+      </figure>
+       <figure class="photo">
+        <img src="images/st lucias.jpeg" alt="Evening Kayak Parade" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>St Lucia Kayak Parade is so romantic. I'm so happy that I was able to see it.</figcaption>
+      </figure> 
+     
+    </div>
+
+    <!-- Center content -->
+    <div class="content", style="text-align: left;">
+    <h2><a href="study-abroad.html">Study Abroad Blog</a></h2>
+    <h3>December 1,2025 - December 14, 2025: The final days (how does time fly) </h3>
+<div style="text-align: justify;">
+
+  <p>
+    What a rush! I’m so lucky to know myself so well.
+  </p>
+
+  <p>
+    <strong>Monday, December 1st, 2025:</strong><br>
+    Last TooGoodToGo from Alma store. Unfortunately, I did not get cake, but I did like the cookies and whoopie pies I got.
+  </p>
+
+  <p>
+    <strong>Tuesday, December 2nd, 2025:</strong><br>
+    Explored the bakery recommendation from the local friend. It was quite good and a tad less expensive. I think I did some good work there. I actually do not remember, hehe, by the time of writing this. I do know that I enjoyed my time in Frederiksberg, and I wished I spent more time exploring that neighborhood.
+  </p>
+
+  <p>
+    There was a kebab truck that I waited for, which was good and cheap, especially compared to the new place on Vestergade. This semester, I discovered my love of kebab, especially döner kebab.
+  </p>
+
+  <p>
+    Oooh, I also played pakkeleg for the first time and won earplugs, which I immediately lost in the covers that night and never rediscovered :(. Pakkeleg is a Danish gift-giving game that involves dice and is similar to White Elephant, except there’s more running to steal gifts.
+  </p>
+
+  <p>
+    <strong>Wednesday, December 3rd, 2025:</strong><br>
+    Ruby visited Morgan! Which means I got to have lunch with the SFGC crew! These are the people I grew up with for ten years in a conservatory choir. That was hard, but I love these people so much, so it was good to see Ruby. Yippee.
+  </p>
+
+  <p>
+    Morgan also studied at DIS along with Adela, and Ruby was on winter break visiting. This was so fun, and I showed Ruby and Morgan the Nørrebro farm and garden afterwards.
+  </p>
+
+  <p>
+    <strong>Thursday, December 4th, 2025:</strong><br>
+    I got TikTok-influenced to visit an Asian bakery where the customer service and products were just okay. Mamahuhu, but not in a fun way.
+  </p>
+
+  <p>
+    But then I discovered a new favorite bookstore on my way back into the city: The Pond. It’s a queer bookstore with a book club. I’m not one for book clubs, but they had a lovely vibe, and I bought a book of poems that I am still making my way through and absolutely love. I also got my friend Mickie birthday stickers.
+  </p>
+
+  <p>
+    Oh — we had our final Urban Studies class (BIG SAD). I loved this class. Our professor invited all of us over to her house, and we had tea, cake, cookies, and conversation. It was absolutely lovely to spend time with the class one last time.
+  </p>
+
+  <p>
+    <strong>Friday, December 5th, 2025:</strong><br>
+    Still on my bakery nonsense. I tried Andersen’s (the Japanese-inspired one) BMO, which was quite good and expensive (AHHH). I really enjoyed sitting by Islands Brygge afterwards, watching people do cold plunges.
+  </p>
+
+  <p>
+    Evening with the boys doing arts and crafts… kind of. It was a good time, and I enjoyed it. Afterwards, I got drinks with some Wellesley friends. I’m so happy to have become better friends with Adina and especially Chelsea (shoutout!). This was a very fun night where I rediscovered songs I absolutely loved — and learned that coat check can be 120 DKK. Anyways, it was a good time.
+  </p>
+
+  <p>
+    <strong>Saturday, December 6th, 2025:</strong><br>
+    An absolutely awesome frisbee game and a great dinner for Mickie’s birthday at her homestay in Roskilde.
+  </p>
+
+  <p>
+    Huge shoutout to the DIS frisbee people for being the best kinds of people at DIS. So open to making friends, caring about people they don’t know, and pretty good at organizing groups. Doesn’t need to be timely as long as there’s daylight, right? I wish them the best in all their endeavors and was so happy to have a group to hang out with from time to time.
+  </p>
+
+  <p>
+    In the evening, I met a new friend at Oscar Bar | Café, which was lovely, followed by a good walk and talk around the city.
+  </p>
+
+  <p>
+    <strong>Sunday, December 7th, 2025:</strong><br>
+    Lunch with Chelsea at Matcha Mori in Nordhavn. Absolute gem of a human, and I’m so happy I got to know her over the semester. <strong>Become friends with people from your college too — don’t discount them because you’ll see them again in January.</strong> I’m so excited to have another extroverted friend when I return to Wellesley.
+  </p>
+
+  <p>
+    Last Hucks practice :((. It was lovely, and I was such a fan of most of the Hucksters. I made a defensive block that could’ve been a Callahan, which is too bad I didn’t catch it — especially because it was universe point and my team ended up losing. Still, a good last practice.
+  </p>
+
+  <p>
+    <strong>Monday, December 8th, 2025:</strong><br>
+    Last day of classes. Weird — but only my favorite classes, so I enjoyed it. I picked up licorice butterflies at Netto because I’d grown quite fond of them. Salty licorice grows on you somehow. I’ll get my friend who’s going abroad in the spring to grab me a bag. Thank you in advance.
+  </p>
+
+  <p>
+    I visited my friend in Albertslund that afternoon.
+  </p>
+
+  <p>
+    <strong>Tuesday, December 9th, 2025:</strong><br>
+    No class. But I finally got to see my friend Aashna, who I’d been meaning to hang out with all semester. We went to Kopan, the Korean bulgogi burger place nearby, and then walked around DIS.
+  </p>
+
+  <p>
+    Invited Kiara and Mickie over to pre the pregame. We had some Gammel Dansk and made a music video. It was nice to see them and complete the trifecta of seeing where each other lived.
+  </p>
+
+  <p>
+    We headed to Miles’ at Nimbus after and ran into Peri (all frisbee people) on the metro — same car, same door. I learned that while I enjoy Rage Cage, I am bad at it. Whoops. I took a break round two and talked with Morgan, who also lived at Nimbus and was friends with Miles.
+  </p>
+
+  <p>
+    Many opinions surfaced that night — makes sense when time is short. Proud Mary’s was surprisingly fun, and afterwards I went to Central Stage for karaoke.
+  </p>
+
+  <p>
+    <strong>Wednesday, December 10th, 2025:</strong><br>
+    Bakery nonsense continues. I went to Apotek 57, which was lovely and so close to Sølvgade. I walked to Østerport and romanticized the whole thing.
+  </p>
+
+  <p>
+    Later, I went to the final frisbee pickup. So fun, especially because I scored a handful of times (not as many as Mickie, the scoring machine). There were so many snacks and Capri Suns. I love those people.
+  </p>
+
+  <p>
+    My mom flew in this day, and I got dinner with her at Torvehallerne at the Italian place. It was also time to start taking down decorations, so I did one wall.
+  </p>
+
+  <p>
+    <strong>Thursday, December 11th, 2025:</strong><br>
+    Explored Amager Strand for the first time. Lovely, slower-paced, and a nice contrast to the city center.
+  </p>
+
+  <p>
+    Afterwards was the DIS festival, where I met up with Mickie and Kiara. We saw presentations, drank gløgg, and bought local honey. It was good to see everyone one last time and celebrate what we shared — but so sad to say final goodbyes. It won’t ever be the same, but I know I’ll stay friends with Mickie and Kiara.
+  </p>
+
+  <p>
+    Lots of packing, and I didn’t sleep a wink as people moved out throughout the night.
+  </p>
+
+  <p>
+    <strong>Friday, December 12th, 2025:</strong><br>
+    Moved out of Sølvgade. Bittersweet. I accidentally left some food in the fridge — it’ll be okay. I left a pickle I’d been munching on all semester, so I know it doesn’t stink.
+  </p>
+
+  <p>
+    My mom graciously helped move my things to her Airbnb in the city center. Afterwards, we walked through a light show at Ofelia Plads and got dinner at Muji.
+  </p>
+
+  <p>
+    <strong>Saturday, December 13th, 2025:</strong><br>
+    My mom and I went to Lille Bakery near Reffen. Absolutely amazing. Such a nice atmosphere — I loved sitting by the window, feeling the draft as I layered up and down.
+  </p>
+
+  <p>
+    Santa Lucia parade and one final goodbye to my Copenhagen friends.
+  </p>
+
+  <p>
+    <strong>Sunday, December 14th, 2025:</strong><br>
+    M2 to Københavns Lufthavn to go to London. Thank you for an experience of a lifetime — great memories and even better friends.
+  </p>
+</div>
+
+
+
+      <footer>
+        © <span id="y"></span> Finn Kingsbury
+        <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+      </footer>
+    </div>
+
+    <!-- Right flanking images -->
+    <div class="side-images">
+      <figure class="photo">
+        <img src="images/paludan bog.jpeg" alt="Paludan Bog and Cafe" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>I love a bookstore cafe with alternative artwork. The basement was so cool and the people were very helpful!</figcaption>
+      </figure>
+        <figure class="photo">
+        <img src="images/final hucks.jpeg" alt="Final Hucks practice" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Final Hucks practice (photo with Kiara and Rosan)</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/final class reg.jpeg" alt="High tea at a professors house" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>final class with tea and cookies at Professor Regitze Hess's apartment. </figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/the pond.jpeg" alt="The Pond Bookstore" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Great queer bookstore</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/dvh frisb.jpeg" alt="DIS Frisbee Final Game" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Organized DIS Frisbee pickup final game</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/bestpals.jpeg" alt="Kiara and Mickie and I in one frame" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>We had a good time together that evening!! Smiles all around</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/lille.jpeg" alt="Another bakery: Lille" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Mom took me here. A little far near Reffen, but very cozy even with tall ceilings.</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/serenity.jpeg" alt="Lake by Osterport st" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Took a long walk back from Marmokirken the crossed by this lake and willow tree.</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/hot chocoscars.jpeg" alt="Hot Chocolate from Oscar Cafe|Bar" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Hot Chocolate that my friend made me (thank you for the soy milk! teehee!)</figcaption>
+      </figure>
+    </div>
+  </div>
+</body>
+</html>

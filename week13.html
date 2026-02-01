@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Study Abroad · Finn Kingsbury</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    body {
+      font-family: 'Garamond', serif;
+      line-height: 1.6;
+      font-size: 18px;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      background: #fff;
+    }
+
+    /* Three-column grid for layout */
+    .layout {
+      display: grid;
+      grid-template-columns: 1fr minmax(500px, 725px) 1fr;
+      gap: 20px;
+      max-width: 1600px;
+      width: 100%;
+    }
+      
+
+    .content {
+      grid-column: 2;
+      text-align: center;
+    }
+
+    ul {
+      text-align: left;
+    }
+
+    /* Side Images Container */
+    /* .side-images {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .photo {
+      position: relative;
+      display: inline-block;
+    }
+
+    .photo img.main {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border: 4px solid white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      transform: rotate(-2deg);
+    } */
+     .side-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;   /* instead of center */
+}
+
+.photo {
+  position: relative;
+  display: block;         /* full block */
+  width: 100%;            /* fill the whole grid column */
+}
+
+.photo img.main {
+  width: 100%;            /* instead of max-width */
+  height: auto;
+  border: 4px solid white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transform: rotate(-2deg);
+}
+
+
+    .photo .tack {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-20deg);
+      width: 30px;
+      pointer-events: none;
+    }
+
+    .photo figcaption {
+      display: none;
+      font-size: 0.85rem;
+      color: #444;
+      text-align: center;
+      margin-top: 6px;
+    }
+
+    .photo:hover figcaption {
+      display: block;
+    }
+
+    /* Mobile responsive: stack columns */
+    @media (max-width: 800px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+      .content {
+        grid-column: 1;
+      }
+      .side-images {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .photo {
+        width: 45%;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <!-- Left flanking images -->
+    <div class="side-images">
+      <figure class="photo">
+        <img src="images/rijks_ship.jpg" alt="Rijksmuseum Ship" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Cool ship model in the Rijksmuseum</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/stroopwaffle.jpg" alt="Stroopwafel" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Delicious stroopwafel from a local cafe!</figcaption>
+      </figure>
+      <!-- <figure class="photo">
+        <img src="images/mrnata.jpg" alt="Portuguese Egg tart" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Portuguese Egg Tart, so tasty!</figcaption>
+      </figure> -->
+      <figure class="photo">
+        <img src="images/oxford_hos.jpg" alt="Oxford House of Science" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>History of Science museum.</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/guiness.jpg" alt="Pint of Guinness" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Pint of Guiness</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/dinner_wMickie.jpg" alt="Dinner in Bologna with Mickie" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Dinner with Mickie</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/french_braid.jpg" alt="French braid" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Self french braid. Telltale sign to get a haircut lol.</figcaption>
+      </figure>
+    </div>
+
+    <!-- Center content -->
+    <div class="content">
+    <h2><a href="study-abroad.html">Study Abroad Blog</a></h2>
+    <h3>November 15 - November 23, 2025: Settling in Copenhagen</h3>
+    <p>
+       <ul>
+  <li>
+    <strong>Week of Nov 16 – Nov 23</strong>
+  </li>
+  <li>
+    <strong>Nov 16:</strong> Played some lovely frisbee in the sunset (at 4pm :(( ). These early sunsets make me a little sad given all the energy that I still want to experience. Yes, the night is the night, but it’s a lot harder to get out of my dorm when the sun has set, and my motivation to leave my room is far lower than when the sun is out. I’m a nut about getting sun and seeing it.
+  </li>
+  <li>
+    <strong>Nov 17:</strong> Got a haircut on Nørrebrogade for 150 DKK. First time touching cash because that’s how I paid the guy. The day and week of the haircut I always feel iffy, but now I like it and it has grown in well, so I’m happy with it.
+  </li>
+  <li>
+    <strong>Nov 18:</strong> Sprints in Fælledparken. Met a dog. Had a good time doing sprints and restarting with Woody’s workouts.
+  </li>
+  <li>
+    <strong>Nov 19:</strong> Pickup frisbee with DIS frisbee pals and Peri’s birthday. CopenHot and spent time with Adina, who also goes to Wellesley! In retrospect, this is definitely when I first got sick because the sauna opened my sinuses and burned, then the cold plunge. Still, it was lovely to spend time with friends and a new friend, and I enjoyed the experience despite the overwhelming temperature changes, especially since it was raining.
+  </li>
+  <li>
+    <strong>Nov 20:</strong> Dinner with Chelsea at Hello Pasta, which was so tasty, then we walked around Nyhavn. I’m so happy we’re friends and it’s always so easy to talk with her. We talked about wanting to eat through Copenhagen in our last few weeks and how food is a way we consume culture that feels more real than museums. Also, it SNOWED!!!
+  </li>
+  <li>
+    <strong>Nov 21:</strong> Met my visiting host family for the first time! It’s a DIS program where students meet with a family without living with them. Mine were a mother and daughter named Louise and Caylee. We had Christmas dinner (duck and caramelized potatoes). It was quite tasty, and I enjoyed meeting them. I taught the daughter a hand-clapping game my campers loved.
+  </li>
+  <li>
+    <strong>Nov 22:</strong> Nothing and yet something. Juno the Bakery (worth it!). They had a whole operation and the line wasn’t too long—or rather, it moved, and I wasn’t in a rush. Then Køge, the end of the A S-tog, which was nice.
+  </li>
+  <li>
+    <strong>Nov 23:</strong> Walked around Copenhagen! Lovely time and a good frisbee practice.
+  </li>
+</ul>
+
+    </p>
+
+
+      <footer>
+        © <span id="y"></span> Finn Kingsbury
+        <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+      </footer>
+    </div>
+
+    <!-- Right flanking images -->
+    <div class="side-images">
+      <figure class="photo">
+        <img src="images/rijks_library.jpg" alt="Rijksmuseum library" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>I love a bookshelf ladder</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/selfiestraat.jpg" alt="Selfie Straat" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Selfie @ Straat</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/kimi_hightea.jpg" alt="High Tea at Kimi" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>High Tea with Kimi</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/kimi_hp.jpg" alt="Selfie with Kimi in Harry Potter dining hall" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Selfie with Kimi in Harry Potter dining hall.</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/nosleepbologna.jpg" alt="No Sleep in Bologna" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>No Sleep in Bologna; selfie with Kiara and Mickie. </figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/dinner_burrate.jpg" alt="Dinner Burrata Pasta" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Chef-ed this up yesterday, quite happy and made good leftovers!</figcaption>
+      </figure>
+       <figure class="photo">
+        <img src="images/dinner_salmonda.jpg" alt="Dinner with Salmon and Salad" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Salmon Salad dinner</figcaption>
+      </figure>
+    </div>
+  </div>
+</body>
+</html>

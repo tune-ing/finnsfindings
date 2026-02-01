@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Study Abroad · Finn Kingsbury</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    body {
+      font-family: 'Garamond', serif;
+      line-height: 1.6;
+      font-size: 18px;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      background: #fff;
+    }
+
+    /* Three-column grid for layout */
+    .layout {
+      display: grid;
+      grid-template-columns: 1fr minmax(500px, 725px) 1fr;
+      gap: 20px;
+      max-width: 1600px;
+      width: 100%;
+    }
+      
+
+    .content {
+      grid-column: 2;
+      text-align: center;
+    }
+
+    ul {
+      text-align: left;
+    }
+
+    /* Side Images Container */
+    /* .side-images {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .photo {
+      position: relative;
+      display: inline-block;
+    }
+
+    .photo img.main {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border: 4px solid white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      transform: rotate(-2deg);
+    } */
+     .side-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;   /* instead of center */
+}
+
+.photo {
+  position: relative;
+  display: block;         /* full block */
+  width: 100%;            /* fill the whole grid column */
+}
+
+.photo img.main {
+  width: 100%;            /* instead of max-width */
+  height: auto;
+  border: 4px solid white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transform: rotate(-2deg);
+}
+
+
+    .photo .tack {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-20deg);
+      width: 30px;
+      pointer-events: none;
+    }
+
+    .photo figcaption {
+      display: none;
+      font-size: 0.85rem;
+      color: #444;
+      text-align: center;
+      margin-top: 6px;
+    }
+
+    .photo:hover figcaption {
+      display: block;
+    }
+
+    /* Mobile responsive: stack columns */
+    @media (max-width: 800px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+      .content {
+        grid-column: 1;
+      }
+      .side-images {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .photo {
+        width: 45%;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <!-- Left flanking images -->
+    <div class="side-images">
+      <figure class="photo">
+        <img src="images/rijks_ship.jpg" alt="Rijksmuseum Ship" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Cool ship model in the Rijksmuseum</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/stroopwaffle.jpg" alt="Stroopwafel" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Delicious stroopwafel from a local cafe!</figcaption>
+      </figure>
+      <!-- <figure class="photo">
+        <img src="images/mrnata.jpg" alt="Portuguese Egg tart" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Portuguese Egg Tart, so tasty!</figcaption>
+      </figure> -->
+      <figure class="photo">
+        <img src="images/oxford_hos.jpg" alt="Oxford House of Science" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>History of Science museum.</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/guiness.jpg" alt="Pint of Guinness" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Pint of Guiness</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/dinner_wMickie.jpg" alt="Dinner in Bologna with Mickie" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Dinner with Mickie</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/french_braid.jpg" alt="French braid" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Self french braid. Telltale sign to get a haircut lol.</figcaption>
+      </figure>
+    </div>
+
+    <!-- Center content -->
+    <div class="content", style="text-align: left;">
+    <h2><a href="study-abroad.html">Study Abroad Blog</a></h2>
+    <h3>November 24 - November 30, 2025: Thanksgiving Sandwich (with Copenhagen bread)</h3>
+<h3>SPAIN reflection (and the start and end of that week)</h3>
+<p>
+    <strong> Aisde from December 5th, 2025 (when I wrote this)</strong> <br>
+    <p>I have work that I need to do including a reflection 1200 ish words for my Sci-Fi class and a reflection for my Urban Studies course. But I’m not worried about that too much. We have less than a week and this is the final weekend in Copenhagen. The fervor that I mentioned in my last entry is certainly still true and has become even more so with this weekend having the most plans yet. I am excited to spend time with friends and continue to explore the city and what it has to offer. </p>
+    <p>I have to continue to remind myself, even San Francisco, I do not know all of. I do not have to  take advantage of everything and that is okay. Of course, that’s an easier obstacle because I know that San Francisco will always be my home and it is easy to return to while my parents are still there, and it would be a lot harder to return to Copenhagen and it is unlikely that I will live in Copenhagen again and never as a student in university again. But then every place I live is temporary, nothing is permanent. Insert some philosopher speaking about how time is fleeting and gratitude or something idk. The bottom line for this weekend is that I’m excited to soak it all in despite what the weather is. </p>
+    <p>But first to look back at the past two weeks and remind myself what I have been up to since November 14th as the days are definitely blurring together. </p>
+
+    <strong>November 24:</strong> DIDN’T SEE MICKIE (SAD), SO SAD.<br>
+  MICO concert — so fun. I love to staff, but it was a little bit of a weird crowd. I don’t watch MICO’s TikToks or non-music videos, so I don’t really know him as a personality. I learned that I don’t really like his personality, but I still had a good time nonetheless.
+</p>
+
+<p>
+  <strong>November 25:</strong> Packed for Spain. Erin asked if I could ring a disc, so I did.
+</p>
+
+<p>
+  <strong>SPAIN:</strong><br>
+  Left so early and was sick at the beginning. Debated not going, but I am very glad that I went. Being sick took the pressure off of being a “good tourist” and seeing everything.
+</p>
+
+<p>
+  It’s been nearly a month since I was in Spain, so this reflection is not timely. But it does need to happen at some level so that I can feel complete about my reflections for study abroad. So here we go.
+</p>
+
+<p>
+  <strong>Spain:</strong> I spent a lot of time with friends new and old. I don’t have a photo with Michelle (a high school friend), but I enjoyed her company as well.
+</p>
+
+<p>
+  <strong>Wednesday, November 26th, 2025:</strong><br>
+  Six hours on a plane plus a two-hour layover, plus getting to and from the airport on both sides. Woke up at 3:30 AM, left around 5:00 AM for a 6:00 AM flight. Best idea? No. Did I make it? Yes, with plenty of time. I was mad at the world for being sick.
+</p>
+
+<p>
+  The Madrid airport I do not remember was hard to navigate out of. The train lines were a lot harder. This is one thing I’ve noticed: if I can solidly understand the language, the worse the public transportation system. Strange.
+</p>
+
+<p>
+  Best part of the day: spending time with Erin Fina! One of my good friends from college. Met her on the frisbee team, and we’ve been good friends ever since. We tossed, got a snack, and then got dinner together. That was awesome and made me so happy.
+</p>
+
+<p>
+  I learned that Spaniards eat late in the day, so afterwards I went on a tapas tour run by my hostel and learned about the history of tapas and sangria.
+</p>
+
+<p>
+  <strong>Thursday, November 27th, 2025:</strong><br>
+  Tour of old Madrid with my hostel. A little boring, but I’m glad I went. Surprisingly tasty chicken teriyaki for lunch.
+</p>
+
+<p>
+  Met up with my high school friend Michelle Z at Pomona, who was studying with Middlebury in Madrid. It was good to catch up and see her favorite spots. We ran into a protest for university funding and a Wellesley student whom one of my other friends from Wellesley swims with on the team.
+</p>
+
+<p>
+  <strong>Friday, November 28th, 2025:</strong><br>
+  Museum day. I liked the Reina Sofía a lot more. Old European art museums really start to show the same works at some level. I did run into someone from middle school at the Prado, which was wild — especially because her sister, who was also there, had studied through DIS Copenhagen two years prior.
+</p>
+
+<p>
+  I visited El Retiro Park afterwards. The great part of Madrid was the weather and the glorious blue skies. By that point in November, the sun hadn’t graced Copenhagen in many weeks, and I was missing what real sunny warmth felt like.
+</p>
+
+<p>
+  For dinner, I looked up a place on Google Maps. It was great and very filling. Definitely the “wrong” time, but I was hungry, so I was going to eat.
+</p>
+
+<p>
+  That evening, I met up with friends I had met studying abroad, one of whom grew up in Madrid. I also attended a hostel pub crawl. It was fine. I wouldn’t do it again. Very funny characters — fully out of central casting — and people I would never actually be friends with.
+</p>
+
+<p>
+  <strong>Saturday, November 29th, 2025:</strong><br>
+  San Ginés chocolatería. Pretty good. Not sweet. Low-key campy in its attempt to maintain a retro style.
+</p>
+
+<p>
+  I love visiting a queer bookstore. And a print shop.
+</p>
+
+<p>
+  I got lunch at my friend’s recommended restaurant. Good food, slow service. Left for my flight around 1:30 PM. I was so ready to leave. Being sick meant I didn’t have much energy to pursue everything, so it felt good to leave when I did.
+</p>
+
+<p>
+  Made it back to Sølvgade before midnight, which I was very, very happy about.
+</p>
+
+<h3>BACK TO COPENHAGEN</h3>
+
+<p>
+  <strong>Sunday, November 30th, 2025:</strong><br>
+  I met up with one of my college friends’ local Copenhagen friends from studying together at UWC Germany. I really enjoyed that time — a good walk and a chance to learn about the life of a local.
+</p>
+
+
+    </p>
+
+
+      <footer>
+        © <span id="y"></span> Finn Kingsbury
+        <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+      </footer>
+    </div>
+
+    <!-- Right flanking images -->
+    <div class="side-images">
+      <figure class="photo">
+        <img src="images/rijks_library.jpg" alt="Rijksmuseum library" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>I love a bookshelf ladder</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/selfiestraat.jpg" alt="Selfie Straat" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Selfie @ Straat</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/kimi_hightea.jpg" alt="High Tea at Kimi" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>High Tea with Kimi</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/kimi_hp.jpg" alt="Selfie with Kimi in Harry Potter dining hall" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Selfie with Kimi in Harry Potter dining hall.</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/nosleepbologna.jpg" alt="No Sleep in Bologna" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>No Sleep in Bologna; selfie with Kiara and Mickie. </figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/dinner_burrate.jpg" alt="Dinner Burrata Pasta" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Chef-ed this up yesterday, quite happy and made good leftovers!</figcaption>
+      </figure>
+       <figure class="photo">
+        <img src="images/dinner_salmonda.jpg" alt="Dinner with Salmon and Salad" class="main">
+        <img src="assets/tack.png" alt="" class="tack">
+        <figcaption>Salmon Salad dinner</figcaption>
+      </figure>
+    </div>
+  </div>
+</body>
+</html>
